@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.4">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 22.7px 'Times New Roman'; -webkit-text-stroke: #000000}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.7px Arial; -webkit-text-stroke: #000000; min-height: 16.0px}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 16.0px 'Times New Roman'; -webkit-text-stroke: #000000}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.7px 'Times New Roman'; -webkit-text-stroke: #000000}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 14.7px Arial; -webkit-text-stroke: #000000; min-height: 16.0px}
+    p.p7 {margin: 0.0px 0.0px 0.0px 48.0px; text-indent: -48.0px; font: 14.7px Arial; -webkit-text-stroke: #000000; min-height: 16.0px}
+    p.p8 {margin: 0.0px 0.0px 0.0px 48.0px; text-indent: -48.0px; font: 14.7px 'Times New Roman'; -webkit-text-stroke: #000000}
+    p.p9 {margin: 0.0px 0.0px 0.0px 0.0px; text-indent: 48.0px; font: 14.7px Arial; -webkit-text-stroke: #000000; min-height: 16.0px}
+    p.p10 {margin: 0.0px 0.0px 0.0px 96.0px; text-indent: -96.0px; font: 14.7px Arial; -webkit-text-stroke: #000000; min-height: 16.0px}
+    p.p11 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 14.7px 'Times New Roman'; -webkit-text-stroke: #000000}
+    li.li2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 17.3px 'Times New Roman'; -webkit-text-stroke: #000000}
+    li.li5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.7px 'Times New Roman'; -webkit-text-stroke: #000000}
+    span.s1 {font-kerning: none}
+    span.s2 {-webkit-text-stroke: 0px #000000}
+    ul.ul1 {list-style-type: none}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1"><b>Methodology</b><b></b></span></p>
+<ul class="ul1">
+  <li class="li2"><span class="s2"><b></b></span><span class="s1"><b>Introduction</b><b></b></span></li>
+  <li class="li2"><span class="s2"><b></b></span><span class="s1"><b>Assumptions</b><b></b></span></li>
+  <li class="li2"><span class="s2"><b></b></span><span class="s1"><b>House<br>
+3.1. Appliances<br>
+    • Car<br>
+    • Air Conditioner<br>
+    • Refrigerator<br>
+    • Heater<br>
+    • Solar Panel<br>
+3.2. Modifiers</b><b></b></span></li>
+  <li class="li2"><span class="s2"><b></b></span><span class="s1"><b>Power Sources</b><b></b></span></li>
+  <li class="li2"><span class="s2"><b></b></span><span class="s1"><b>Conclusion</b><b></b></span></li>
+</ul>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1"><b>Introduction</b><b></b></span></p>
+<p class="p5"><span class="s1">In this document, we will lay out exactly how we produce, calculate, and simulate all values in WattWorld. Upon entrance, the user sees 4 bars: Energy Consumption (In KWH per month), Cost ($ per month), Pollution (in Tons of C02 per month), and finally Initial Investment ($). The user can choose various house modifiers and power sources and watch how the various values change. First we will go over the assumptions we made in our implementation, then we will split the explanation of the House and Power Sources into different sections, explaining the calculations and components of each, then finally we will conclude and speak about how our models interact.</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1"><b>Assumptions</b><b></b></span></p>
+<p class="p5"><span class="s1">Throughout this document, you will notice that we make some major assumptions. This is because WattWorld is not a comprehensive simulation. For example, we cannot take into account the socio-economic reasons for why gasoline is priced the way it is, so we must assume a general price for gasoline. In this case, we decided on $0.09 per KWh. We make many other assumptions in our implementation, all with careful consideration for the wider impact on our overall model.</span></p>
+<p class="p6"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1"><b>House</b><b></b></span></p>
+<p class="p5"><span class="s1">The first main component of our model is the House. The House contains a few appliance objects. These include Car, AirConditioner, Heater, and Refrigerator. Besides these, the House also includes a few modifiers, such as number of occupants, solar panel on/off, etc. We will first describe our appliances, then we will describe the modifiers to the house.</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1"><b>Appliances</b><b></b></span></p>
+<p class="p7"><span class="s1"></span><br></p>
+<p class="p8"><span class="s1">Our appliance class includes all house modifiers that cannot be represented by a true/false relationship. Each appliance has three meaningful values: Cost, Consumption, and Pollution. Cost represents upfront cost at purchase. Consumption represents the consumption in KWh equivalent for a normal month of use. Finally, pollution represents the monthly C02 emissions in Kg for an average user.</span></p>
+<p class="p7"><span class="s1"></span><br></p>
+<p class="p8"><span class="s1">All values are from either industry averages or from individual listings on their respective market pages. Next, we will highlight individual appliances and describe their implementation.</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<ul class="ul1">
+  <li class="li5"><span class="s2"><b></b></span><span class="s1"><b>Car</b>: Our Car class contains 2 types: EV and Gas/Diesel. Both types have a similar upfront cost. The EV has 0 pollution output, but has a set consumption value based on the average miles driven by a US driver. The Gas vehicle has some pollution and some consumption values, also based on the average miles driven by a US driver.</span></li>
+</ul>
+<p class="p5"><span class="s1">        </span></p>
+<ul class="ul1">
+  <li class="li5"><span class="s2"><b></b></span><span class="s1"><b>Air</b> <b>Conditioner</b>: Our Air Conditioner class represents 2 states of an AC: AC and no AC. When no AC is selected, the AC has zero cost, consumption, and pollution. When AC is selected we have fixed cost and consumption values, and 0 pollution.</span></li>
+</ul>
+<p class="p9"><span class="s1"></span><br></p>
+<ul class="ul1">
+  <li class="li5"><span class="s2"><b></b></span><span class="s1"><b>Refrigerator</b>: The Refrigerator class is structured like the Air Conditioner class. We only have two options, refrigerator or no refrigerator. Just like AC, the refrigerator has fixed cost and consumption values and no pollution.</span></li>
+</ul>
+<p class="p7"><span class="s1"></span><br></p>
+<ul class="ul1">
+  <li class="li5"><span class="s2"><b></b></span><span class="s1"><b>Heater</b>: The user has two options for heat type; Coal and Gas. Coal has lower cost, but higher consumption and production than Gas</span></li>
+</ul>
+<p class="p10"><span class="s1"></span><br></p>
+<ul class="ul1">
+  <li class="li5"><span class="s2"><b></b></span><span class="s1"><b>Solar</b> <b>Panel</b>: The user can choose to have or not have a solar panel. The Solar panel appliance has a large upfront cost, negative energy consumption, and no pollution.</span></li>
+</ul>
+<p class="p5"><span class="s1">        </span></p>
+<p class="p5"><span class="s1"><b>Modifiers</b><b></b></span></p>
+<p class="p7"><span class="s1"></span><br></p>
+<p class="p8"><span class="s1">The user can choose certain modifiers that affect the outcome of WattWorld. The modifiers do not have the same design of set values as the Appliances. Instead, they affect certain parts of our House model. For example, we have a modifier for the number of occupants in a home. The amount of occupants has an effect on the energy usage of the home. There are other modifiers, such as weather, that may also affect the outcomes in WattWorld.</span></p>
+<p class="p5"><span class="s1">        </span></p>
+<p class="p11"><span class="s1"><b>Power Sources</b><b></b></span></p>
+<p class="p5"><span class="s1">Our Power Sources have a similar layout as our appliances; they each have 2 values. Cost, and Pollution. Cost is the cost per KWh in $, and pollution is grams of C02 released per KWh. Our values are all based on industry averages for their respective power sources.</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">The power sources available in WattWorld are Natural Gas, Nuclear, Wind, Solar, and Coal. Each power source has unique cost and pollution values. Further information on each can be found in the impact statement displayed in Watt World.</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p11"><span class="s1"><b>Conclusion</b><b></b></span></p>
+<p class="p5"><span class="s1">Our models communicate changes in the environment and preferences, constantly recalculating the various displayed values. The calculations for each value are simple, but we will describe them each. For ‘Initial Investment’ we simply add the cost of each appliance. For ‘Monthly Cost’ we multiply the consumption by the cost of the respective power type (gas or electricity), then finally multiplying by the number of occupants in the house. NExt, for pollution, we add the sum of the pollution of each power source multiplied by the number of occupants and the total consumption multiplied by the current power source pollution value. Finally, for consumption we simply add the consumption of each appliance in the home multiplied by occupants.</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p5"><span class="s1">The result of all of this is an interactive world in which a user can see how their choices impact their wallet, environment, and footprint. The user can use their knowledge of WattWorld to answer various questions in our quiz page, or they can simply take in the beauty of WattWorld and lose themselves in the dynamic interactions of our creation.</span></p>
+</body>
+</html>
